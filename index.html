@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="form.css">
+<title>Cadastro de informações</title>
+</head>
+<body>
+
+    <header> 
+        <img src="imagens/ITAU.png" alt="logo" title="logo" >
+        <h2>Preencha todas as suas informações pessoais. </h2>
+    </header>
+ <br><br>
+<section> 
+    <form name = "meu form" method="post" id=" formulário" > <!-- onsubimt ( que seria uma ação ao clicar no botão do
+     formulário) que verifica através da função enviar, a condicção da mesma , ou seja,  o bloco de código  qye tem dentro do if else -->
+   
+     <div class="box" >
+         <br>
+         <label >
+            <span> Nome Completo<spam class="asteris">*</spam>  </span>
+            <input type="text" class="nome" id="name" />
+         </label>
+
+            <label> 
+
+            <span>CPF<spam class="asteris">*</spam> </span>
+                <input type = "text" class="todos_campos" id="cpf1" onblur="formatar(this)" placeholder="somente números" pattern="[0-9]{11}" maxlength="11"/> 
+
+        
+            </label>   
+            <br><br>
+                <label>
+                    <span> RG </span>
+                    <input type ="n" class= "todos_campos" placeholder="somente números"name ="ecorreio" id="rg" onblur="formatar(this)" pattern="[0-9]{9}" maxlength="9" />     
+                </label> 
+
+                    <Spam>Sexo</Spam>
+
+                   <select id="sexo" class="todos_campos">  <!--seleção  -->
+                        <option class="todos_campos"> Selecione </option>   <!--opção -->
+                        <option class="todos_campos"> Masculino </option> <!--opção -->
+                        <option class="todos_campos" >Feminino</option> <!--opção -->
+                    </select>
+                    <br><br>
+                    
+            <hr>
+                    
+
+               <br></br>
+
+                        <label> 
+                            
+                            <spam>Endereço<spam class="asteris">*</spam> </spam>
+                            <input type="text" class="ender1" id="ender">
+                            <spam>Nº<spam class="asteris">*</spam> </spam><input type="number" id="nr" class="num">
+                            <spam>Bairro</spam> <input type="text"id="bairro" class="todos_campos"><br><br>
+                            <spam>Cidade</spam> <input type="text" id="cidade" lass="todos_campos">
+                        
+                            <spam>Estado</spam>
+                            <select id="estado" class="todos_campos">
+                                        <option>Selecione </option>
+                                        <option> AC- Acre </option> 
+                                        <option> AL - Alagoas</option> 
+                                        <option> AP - Amapá</option> 
+                                        <option>AM - Amazonas </option> 
+                                        <option>BA - Bahia </option> 
+                                        <option>CE - Ceará</option> 
+                                        <option>DF -Distrito Federal </option> 
+                                        <option>ES - Espírito Santo</option> 
+                                        <option>GO - Goiás</option> 
+                                        <option> MA- Maranhão </option> 
+                                        <option> MT - Mata Grosso </option>
+                                        <option> MS - Mato Grosso doSul <option> 
+                                        <option> MG- Minas Gerais </option> 
+                                        <option> PA - Pará </option> 
+                                        <option> PB - Paraíba </option> 
+                                        <option> PR -Paraná </option> 
+                                        <option> PE - Pernambuco</option> 
+                                        <option> PI - Piauí</option> 
+                                        <option> RJ- Rio de Janeiro</option> 
+                                        <option> RN - Rio Grande do Norte</option> 
+                                        <option> RS - Rio Grande do Sul </option> 
+                                        <option>RO - Rondônia</option> 
+                                        <option>RR - Roraima </option>
+                                        <option> SC - Santa Catarina</option> 
+                                        <option>SP - São Paulo</option> 
+                                        <option>SE- Sergipe </option>
+                                        <option>TO - Tocantis</option>  
+                                            
+                                </select> 
+                                <br><br>
+                        <span>Cep </span>
+                        <input type="text" maxlength="8" onblur ="formatar(this)" placeholder="somente números" id="cep" class="todos_campos">
+
+
+
+                    </label>
+                    
+                    <label>
+                     
+                            <spam>Tel. Fixo</spam>
+                            <input type="tel" id="fixo" onblur="formatar(this)" pattern="[0-9]{10}" maxlength="10" placeholder="somente números" class="todos_campos">
+                            <spam>Tel. Celular<spam class="asteris">*</spam> </spam>
+                            <input type="tel"id="cel" onblur="formatar(this)" pattern="[0-9]{10}" maxlength="11"placeholder="somente números" class="todos_campos">
+
+                    </label>
+
+
+
+                    <br> </br>
+
+                        <input type="submit" value="Enviar" onclick="enviar()"  style="width:75px ; height:20px" class="botao" id="botao"> <!--onclik é a ação de clicar no botão e está linkada a função enviar. -->
+                    
+        </div>
+</form>
+</section> 
+<div class="espaco"> </div> <!-- div criada para dar espaço entre o formulário e o rodapé no css-->
+       
+<footer class="rodape-prin">
+
+    &copy; 2021 Itaú Unibanco Holding S.A. CNPJ: 60.872.504/0001-23
+    <p class="txt_rodape">Praça Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal, Parque Jabaquara - CEP 04344-902 - São Paulo - Brasil</p>
+       <script src="form.js"></script>
+</body>
+</html>

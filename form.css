@@ -1,0 +1,114 @@
+
+body {
+
+    background-color: rgb(226, 220, 220);
+    
+}
+
+h1{
+
+   text-align: justify;
+   text-align: center;
+   color: rgb(253, 170, 4);
+}
+
+h3 {
+
+    text-align: justify;
+    text-align: center;
+    color:  rgb(253, 170, 4);
+
+}
+
+section {  
+    background: rgb(4, 82, 172); 
+    border-radius: 10px ; /* border -radius =  arredonda as pontas da section */
+    padding: 15px; /* padding =  configura um espaço dentro da section  */
+    width:750px; 
+    height: 300px;
+    margin: auto;  /* margin = centralização  */
+    box-shadow: 5px 5px 10px rgb(253, 153, 4) ; /* box-shadow =  sombremamento da section   */
+    color:floralwhite;
+
+
+
+}
+
+
+.asteris{
+    color: rgb(255, 1, 1);
+    font-size: medium;
+
+}
+
+.nome{
+
+    width: 250px;
+    height:18px;
+}
+
+.cpf {
+
+    height:18px  
+}
+
+.ender1 {
+
+    width: 250px;
+    height:18px;
+}
+
+.todos_campos{
+
+    height:18px;
+
+}
+
+.num {
+    width: 45px;
+    height:18px;
+}
+
+.botao {
+margin: auto;
+border-radius: 8px ;
+width: 350px;
+height: 100px;
+
+
+
+
+}
+
+form {
+
+    text-align: center;
+}
+
+header {
+
+text-align: center;
+color: rgb(216, 142, 4);
+}
+
+.rodape-prin
+{
+    background-color:  rgb(228, 169, 9);       
+    clear: both;
+    padding: 28px;         
+    color: rgb(0, 25, 247);
+    font-size: 15px;
+    font-family: "arial", sans-serif;
+    width: 1500px;
+    height: 25x;
+    text-align: center;
+}
+
+
+.espaco { 
+
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin-top: 50px 
+}
